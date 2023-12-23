@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap style sheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="box py-5 position-relative">
+        <div class="container d-flex flex-column justify-content-center align-items-center ">
+            <h1 class="py-3 position-relative">Bookmarker</h1>
+            <div class="book-content w-100 p-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-3 ">
+                <h2 class="pb-3"><i class=" pe-2 fa-regular fa-bookmark"></i>Bookmark your favorite sites<i class=" ps-2 fa-regular fa-bookmark"></i></h2>
+                <div class="site-name w-100">
+                    <label for="bName" class="pb-2 fw-bold">
+                        <i class="fa-solid fa-book-bookmark pe-2 text-danger"></i>
+                        Site Name
+                    </label>
+                    <input type="text" name="book-name" id="bName" class=" btn-site form-control border-warning">
+                </div>
+                <!-- validation -->
+                <div id="vlaidName" class="vlaidName ps-3 pe-3 w-100 commonval">
+                </div>
+                <div class="site-url w-100 ">
+                    <label for="bURL" class="pb-2 fw-bold">
+                        <i class="fa-solid fa-link text-danger"></i>                       
+                        Site URL
+                    </label>
+                    <input type="text" name="book-url" id="bURL" class=" btn-site form-control border-warning">
+                </div>
+                <!-- validation -->
+                <div id="vlaidURL" class="vlaidURL ps-3 pe-3 w-100 commonval">
+                </div>
+                <button onclick="createBookmark()" class="btn px-5  my-4 trans btn-outline-secondary" id="btnSubmit">Submit</button>
+            </div>
+            <!-- search -->
+            <div id="setSearchField" class="p-3 w-50">
+            </div>
+            <table class="table  text-center mt-4">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
